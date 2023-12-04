@@ -284,30 +284,36 @@ PROJECT CSS
 body {
   background: var(--grey-200);
 }
+
 .hero {
   min-height: 40vh;
-  background: var(--white);
+  padding: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  background-color: var(--white);
 }
-.img-container {
-  display: none;
-}
+
 .hero-center {
   width: 90vw;
   max-width: var(--max-width);
 }
-.hero-title h1 {
-  margin-bottom: 2rem;
-  font-weight: 700;
+
+.img-container {
+  display: none;
 }
+
+.hero-title h1 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 .hero-title p {
   line-height: 2;
   max-width: 35em;
   color: var(--grey-600);
 }
+
 @media (min-width: 992px) {
   .hero-center {
     display: grid;
@@ -328,6 +334,15 @@ PROJECTS
 .projects {
   padding: 5rem 0;
 }
+
+.title_underline {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: var(--primary-500);
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
 .projects-center {
   width: 90vw;
   max-width: var(--max-width);
@@ -336,13 +351,15 @@ PROJECTS
   display: grid;
   gap: 2rem;
 }
+
 .project {
-  background: var(--white);
   display: block;
   border-radius: var(--borderRadius);
+  background-color: var(--white);
   box-shadow: var(--shadow-2);
   transition: var(--transition);
 }
+
 .project:hover {
   transform: scale(1.05);
   box-shadow: var(--shadow-4);
@@ -357,14 +374,16 @@ PROJECTS
 .project h5 {
   text-align: center;
   padding: 1rem 0;
-  color: var(--grey-700);
+  color: var(--grey-600);
 }
 
 @media (min-width: 768px) {
   .projects-center {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media (min-width: 992px) {
   .projects-center {
     grid-template-columns: 1fr 1fr 1fr;
